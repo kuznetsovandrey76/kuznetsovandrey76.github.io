@@ -26,7 +26,7 @@ body {
 }
 .left, .right {
 	width: 40%;
-display: inline-block;				
+	display: inline-block;				
 }
 img {
 	width: 35px;
@@ -87,5 +87,13 @@ h2 {
 	}
 	.article {
 		margin: 0;
+	}
+	.header, 
+	.left,
+	.right {
+		width: 100%;
+	}
+	.education {
+		max-width: 85%;
 	}
 }
