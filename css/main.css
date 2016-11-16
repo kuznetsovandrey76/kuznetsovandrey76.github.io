@@ -76,7 +76,8 @@ h2 {
 	.header {
 		border: none;
 		height: auto;
-		margin-left: 25px;
+		width: 40%;
+		margin: 0 5px;
 	}
 	.header, .block {
 		display: block;
@@ -88,12 +89,14 @@ h2 {
 	.article {
 		margin: 0;
 	}
-	.header, 
 	.left,
 	.right {
 		width: 100%;
 	}
 	.education {
 		max-width: 85%;
+	}
+	.block {
+		padding: 5px 20px;
 	}
 }
