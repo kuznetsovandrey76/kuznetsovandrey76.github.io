@@ -61,6 +61,18 @@ ul {
 	filter: alpha(Opacity=100); 
 	opacity: 1;
 }
+.vk {
+	background: #507299;
+	padding: 0 5px;
+	color: white;
+	text-decoration: none;
+} 
+.facebook {
+	background: #3B5998;
+	padding: 0 5px;
+	color: white;
+	text-decoration: none;
+}
 li {
 	line-height: 1.4;
 }
@@ -79,11 +91,16 @@ li [alt="slack"] {
 	width: 18px;
 }
 @media (max-width: 850px) {
+	body {
+		width: 50%;
+		margin: auto;
+	}
 	.header {
 		border: none;
 		height: auto;
 		margin: 0 5px;
-		width: 40%;
+		text-align: center;
+		width: 80%;
 	}
 	.header, .block {
 		display: block;
