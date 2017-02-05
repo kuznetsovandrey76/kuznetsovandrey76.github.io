@@ -1,9 +1,11 @@
 * {
 	margin: 0;
-	padding: 0;
 }
 body {
 	font-family: 'Raleway', sans-serif;	
+}
+.yandex {
+	color: #F00;
 }
 .header {
 	text-align: center;
@@ -33,6 +35,7 @@ img {
 }
 ul {
 	list-style: none;
+	padding: 0;
 }
 .block {
 	padding: 20px;
@@ -61,17 +64,11 @@ ul {
 	filter: alpha(Opacity=100); 
 	opacity: 1;
 }
-.vk {
-	background: #507299;
+.social-media a{
 	padding: 0 5px;
 	color: white;
-	text-decoration: none;
-} 
-.facebook {
-	background: #3B5998;
-	padding: 0 5px;
-	color: white;
-	text-decoration: none;
+	text-decoration: none;	
+		line-height: 1.4;
 }
 li {
 	line-height: 1.4;
@@ -90,17 +87,33 @@ li [alt="slack"] {
 [alt="slack"] {
 	width: 18px;
 }
+.vk {
+	background: #507299;
+} 
+.facebook {
+	background: #3B5998;
+}
+.twitter {
+	background: #1da1f2;
+}
+
+
+
 @media (max-width: 850px) {
-	body {
-		width: 50%;
-		margin: auto;
-	}
+.block__title {
+	text-align: center;
+}
 	.header {
 		border: none;
 		height: auto;
-		margin: 0 5px;
-		text-align: center;
-		width: 80%;
+		width: 100%;
+	}
+	.article {
+		width: 100%;
+	}
+	.logo {
+		width: 90%;
+		display: table;
 	}
 	.header, .block {
 		display: block;
@@ -114,15 +127,37 @@ li [alt="slack"] {
 	}
 	.left,
 	.right {
-		width: 100%;
+		/*width: 100%;*/
+		/*display: block;*/
 	}
 	.education {
 		max-width: 85%;
 	}
 	.block {
 		padding: 5px 20px;
+		margin: 0 auto;
+		width: 100%;
 	}
 	.me {
 		display: block;
+	}
+	.content {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.skills li {
+		display: inline-block;
+		width: 48%;
+	}
+	ul {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 400px) {
+	.content {
+		width: 70%;
+		margin: 0 auto;
 	}
 }
