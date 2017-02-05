@@ -1,163 +1,152 @@
 * {
+	font-family: 'Raleway', sans-serif;
 	margin: 0;
-}
-body {
-	font-family: 'Raleway', sans-serif;	
-}
-.yandex {
-	color: #F00;
-}
-.header {
-	text-align: center;
-	width: 20%;
-	height: 100vh;
-	display: table;
-	position: fixed;
-	border-right: 1px solid gray;
-	padding: 10px;
-}
+ }
+ 
+h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+ }
+ 
+h2 {margin: 10px 0;}
+ 
+li [alt="slack"] {
+	margin-left: -2px;
+	vertical-align: -4px;
+ }
+ 
+img {width: 35px;}
+ 
+ul {
+	list-style: none;
+	padding: 0;
+ }
+ 
+li {line-height: 1.4;}
+ 
 .logo {
-	display: table-cell;	
+	display: table-cell;
 	vertical-align: middle;
-}
+ }
+ 
+.header {
+	border-right: 1px solid gray;
+	display: table;
+	height: 100vh;
+	padding: 10px 0;
+	position: fixed;
+	text-align: center;
+	width: 22%;
+ }
+ 
 .article {
 	display: table;
 	height: 100vh;
 	margin-left: 22%;
 	width: 76%;
-}
+ }
+ 
 .left, .right {
-	display: inline-block;				
+	display: inline-block;
 	width: 40%;
-}
-img {
-	width: 35px;
-}
-ul {
-	list-style: none;
-	padding: 0;
-}
-.block {
-	padding: 20px;
-}
-.right {
-	position: absolute;
-}
+ }
+ 
+.block {padding: 20px;}
+ 
+.right {position: absolute;}
+ 
 .me {
 	display: table-cell;
 	vertical-align: middle;
-}
+ }
+ 
 .logo-img {
 	border-radius: 50%;
 	margin-bottom: 10px;
 	width: 40%;
-}
-.header p {
-	margin-bottom: 10px;
-}
+ }
+ 
+.header p {margin-bottom: 10px;}
+ 
 .profile {
-	filter: alpha(Opacity=80); 
+	filter: alpha(Opacity=80);
 	margin: 0 3px;
-	opacity: 0.80; 
-}
-.profile:hover {
-	filter: alpha(Opacity=100); 
-	opacity: 1;
-}
-.social-media a{
-	padding: 0 5px;
+	opacity: 0.80;
+ }
+ 
+	.profile:hover {
+		filter: alpha(Opacity=100);
+		opacity: 1;
+	 }
+ 
+.social-media a {
 	color: white;
-	text-decoration: none;	
-		line-height: 1.4;
-}
-li {
 	line-height: 1.4;
-}
-h1 {
-	font-size: 30px;
-	text-transform: uppercase;
-}
-h2 {
-	margin: 10px 0;
-}
-li [alt="slack"] {
-	margin-left: -2px;
-	vertical-align: -4px;
-}
-[alt="slack"] {
-	width: 18px;
-}
-.vk {
-	background: #507299;
-} 
-.facebook {
-	background: #3B5998;
-}
-.twitter {
-	background: #1da1f2;
-}
+	padding: 0 5px;
+	text-decoration: none;
+ }
+ 
+[alt="slack"] {width: 18px;}
+ 
+.vk {background: #507299;}
+ 
+.facebook {background: #3B5998;}
+ 
+.twitter {background: #1da1f2;}
+ 
+.yandex {color: #F00;}
+ 
+ 
+
+
 
 
 
 @media (max-width: 850px) {
-.block__title {
-	text-align: center;
-}
+
+	ul {width: 90%;}
+	 
+	.block__title {
+		margin-left: -2em;
+		text-align: center;
+	 }
+	 
 	.header {
 		border: none;
 		height: auto;
 		width: 100%;
-	}
-	.article {
-		width: 100%;
-	}
+	 }
+	 
+	.article {width: 100%;}
+	 
+	.experience ul {text-align: center;}
+	 
 	.logo {
-		width: 90%;
 		display: table;
-	}
+		width: 100%;
+	 }
+	 
 	.header, .block {
 		display: block;
 		position: inherit;
-	}
-	.logo-img {
-		display: none;
-	}
-	.article {
-		margin: 0;
-	}
-	.left,
-	.right {
-		/*width: 100%;*/
-		/*display: block;*/
-	}
-	.education {
-		max-width: 85%;
-	}
+	 }
+	 
+	.logo-img {display: none;}
+	 
+	.article {margin: 0;}
+	 
 	.block {
+		margin: 0 auto;
 		padding: 5px 20px;
-		margin: 0 auto;
 		width: 100%;
-	}
-	.me {
-		display: block;
-	}
-	.content {
-		width: 60%;
-		margin: 0 auto;
-	}
+	 }
+	 
+	.me {display: block;}
+	 
 	.skills li {
 		display: inline-block;
 		width: 48%;
-	}
-	ul {
-		width: 90%;
-		margin: 0 auto;
-	}
+	 }
+ 
 }
 
-@media (max-width: 400px) {
-	.content {
-		width: 70%;
-		margin: 0 auto;
-	}
-}
