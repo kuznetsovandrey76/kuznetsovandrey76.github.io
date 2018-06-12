@@ -27,7 +27,13 @@ li {line-height: 1.4;}
 .logo {
 	display: table-cell;
 	vertical-align: middle;
- }
+}
+
+.logo-info {
+	width: 96%;
+	/*background: khaki;*/
+	margin: 0 auto;
+}
  
 .header {
 	border-right: 1px solid gray;
@@ -36,14 +42,14 @@ li {line-height: 1.4;}
 	padding: 10px 0;
 	position: fixed;
 	text-align: center;
-	width: 22%;
+	width: 24%;
  }
  
 .article {
 	display: table;
 	height: 100vh;
-	margin-left: 22%;
-	width: 76%;
+	margin-left: 24%;
+	width: 74%;
  }
  
 .left, 
@@ -103,7 +109,10 @@ li {line-height: 1.4;}
 .initial_letter,  
 .right_now {color: #F00;}
 
-
+.skills__li-right {
+	margin-left: 10px;
+	font-size: x-small;	
+}
 
 
 @media (max-width: 850px) {
