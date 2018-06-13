@@ -1,35 +1,30 @@
- /*****     MAIN     ******/
 
+/*****     MAIN     ******/
 * {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
- }
+}
 
 .flex {
 	display: flex;
 	width: 100%;
+	font-size: 20px;
 }
- 
+
 h1 {
 	text-transform: uppercase;
- }
- 
- li [alt="slack"] {
-	margin-left: -2px;
-	vertical-align: -4px;
- } 
- 
+}
+
 ul {
 	list-style: none;
 	padding: 0;
- }
- 
+}
+
 li {line-height: 1.5;}
 
 
 
- /*****     ASIDE     ******/
-
+/*****     ASIDE     ******/
 .aside {
 	border-right: 1px solid gray;
 	display: flex;
@@ -38,124 +33,127 @@ li {line-height: 1.5;}
 	text-align: center;
 	width: 25%;
 	justify-content: center;
-	  align-items: center;
- }
+	align-items: center;
+}
 
- .profile {
- 	width: 95%;
- }
-
+.profile {
+	width: 95%;
+}
 
 .profile-img {
 	border-radius: 50%;
 	width: 50%;
- }
-  
+}
+
 .profile__img-link {
 	filter: alpha(Opacity=75);
 	margin: 0 2px;
 	opacity: 0.80;
 	width: 35px;
- }
- 
-	.profile__img-link:hover {
-		filter: alpha(Opacity=100);
-		opacity: 1;
-	 }
- 
+}
+
+.profile__img-link:hover {
+	filter: alpha(Opacity=100);
+	opacity: 1;
+}
+
 .profile-info {
 	margin-bottom: 5px;
 }
 
 
+
 /*****     ARTICLE     ******/
 /*     Exp, Edu, Skills     */
-
 .article {
 	display: flex;
-		position: fixed;
-
+	position: fixed;
 	height: 100vh;
 	margin-left: 26%;
 	width: 74%;
-			justify-content: center;
-	  align-items: center;
-	  
- }
- 
+	justify-content: center;
+	align-items: center;
+}
+
 .article__left, 
 .article__right {
 	display: flex;
 	width: 50%;
 	margin: 5px;
- }
+}
 
- 
- 
- .experience, .education {
- 	width: 90%;
- }
-
+.experience, 
+.education {
+	width: 90%;
+}
 
 
 
- /*****     TRIFLE     ******/
-
+/*****     TRIFLE     ******/
 .right_now {
 	font-size: 12px;
 	font-style: italic;
- }
+}
 
 .social-media a {
 	color: white;
 	line-height: 1.4;
 	padding: 0 5px;
 	text-decoration: none;
- }
- 
-[alt="slack"] {width: 18px;}
- 
+}
+
+[alt="slack"] {
+	width: 20px;
+	margin-left: -2px;
+	vertical-align: -4px;	
+}
+
 .vk {background: #507299;}
- 
+
 .facebook {background: #3B5998;}
- 
+
 .twitter {background: #1da1f2;}
- 
+
 .initial_letter,  
 .right_now {color: #F00;}
 
 .skills__li-right {
 	margin-left: 10px;
-	font-size: x-small;	
+	font-size: 14px;	
 }
 
 
-@media (max-width: 850px) {
-	
 
-	 
+/*****     for SMALL screen     ******/
+@media (max-width: 850px) {
+
 	.aside {
 		border: none;
-	 }
-	 
+	}
+	.profile,
+	.experience, 
+	.education {
+		width: 90%;
+		margin: 0 auto;
+	}	 
 
-	 
 	.article ul, h2 {
 		text-align: center;
-		}
-	 
+	}
 
-	 
-	.flex, .aside, .article, .article__left, .article__right {
+	.flex, 
+	.aside, 
+	.article, 
+	.article__left, 
+	.article__right {
 		display: block;
 		width: 100%;
 		position: static;
 		margin: 0;
 		height: auto;
-	 }
-	 
-	.profile-img {display: none;} 
+	}
 
+	.profile-img {display: none;} 
 
 }
 
