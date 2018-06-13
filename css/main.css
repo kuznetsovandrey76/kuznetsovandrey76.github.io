@@ -1,91 +1,106 @@
+ /*****     MAIN     ******/
+
 * {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
  }
+
+.flex {
+	display: flex;
+	width: 100%;
+}
  
 h1 {
-	font-size: 30px;
 	text-transform: uppercase;
  }
  
-h2 {margin: 10px 0;}
- 
-li [alt="slack"] {
+ li [alt="slack"] {
 	margin-left: -2px;
 	vertical-align: -4px;
- }
- 
-img {width: 35px;}
+ } 
  
 ul {
 	list-style: none;
 	padding: 0;
  }
  
-li {line-height: 1.4;}
- 
-.logo {
-	display: table-cell;
-	vertical-align: middle;
-}
+li {line-height: 1.5;}
 
-.logo-info {
-	width: 96%;
-	/*background: khaki;*/
-	margin: 0 auto;
-}
- 
-.header {
+
+
+ /*****     ASIDE     ******/
+
+.aside {
 	border-right: 1px solid gray;
-	display: table;
+	display: flex;
 	height: 100vh;
-	padding: 10px 0;
 	position: fixed;
 	text-align: center;
-	width: 24%;
+	width: 25%;
+	justify-content: center;
+	  align-items: center;
  }
- 
-.article {
-	display: table;
-	height: 100vh;
-	margin-left: 24%;
-	width: 74%;
+
+ .profile {
+ 	width: 95%;
  }
- 
-.left, 
-.right {
-	display: inline-block;
-	width: 40%;
- }
- 
-.block {padding: 20px;}
- 
-.right {position: absolute;}
- 
-.me {
-	display: table-cell;
-	vertical-align: middle;
- }
- 
-.logo-img {
+
+
+.profile-img {
 	border-radius: 50%;
-	margin-bottom: 10px;
-	width: 40%;
+	width: 50%;
  }
- 
-.header p {margin-bottom: 10px;}
- 
-.profile {
-	filter: alpha(Opacity=80);
-	margin: 0 3px;
+  
+.profile__img-link {
+	filter: alpha(Opacity=75);
+	margin: 0 2px;
 	opacity: 0.80;
+	width: 35px;
  }
  
-	.profile:hover {
+	.profile__img-link:hover {
 		filter: alpha(Opacity=100);
 		opacity: 1;
 	 }
  
+.profile-info {
+	margin-bottom: 5px;
+}
+
+
+/*****     ARTICLE     ******/
+/*     Exp, Edu, Skills     */
+
+.article {
+	display: flex;
+		position: fixed;
+
+	height: 100vh;
+	margin-left: 26%;
+	width: 74%;
+			justify-content: center;
+	  align-items: center;
+	  
+ }
+ 
+.article__left, 
+.article__right {
+	display: flex;
+	width: 50%;
+	margin: 5px;
+ }
+
+ 
+ 
+ .experience, .education {
+ 	width: 90%;
+ }
+
+
+
+
+ /*****     TRIFLE     ******/
+
 .right_now {
 	font-size: 12px;
 	font-style: italic;
@@ -116,50 +131,31 @@ li {line-height: 1.4;}
 
 
 @media (max-width: 850px) {
+	
 
-	ul {width: 90%;}
 	 
-	.block__title {
-		margin-left: -2em;
-		text-align: center;
-	 }
-	 
-	.header {
+	.aside {
 		border: none;
-		height: auto;
-		width: 100%;
 	 }
 	 
-	.article {width: 100%;}
+
 	 
-	.article ul {text-align: center;}
+	.article ul, h2 {
+		text-align: center;
+		}
 	 
-	.logo {
-		display: table;
-		width: 100%;
-	 }
+
 	 
-	.header, .block {
+	.flex, .aside, .article, .article__left, .article__right {
 		display: block;
-		position: inherit;
-	 }
-	 
-	.logo-img {display: none;}
-	 
-	.article {margin: 0;}
-	 
-	.block {
-		margin: 0 auto;
-		padding: 5px 20px;
 		width: 100%;
+		position: static;
+		margin: 0;
+		height: auto;
 	 }
 	 
-	.me {display: block;}
-	 
-	.skills li {
-		/*display: inline-block;*/
-		/*width: 48%;*/
-	 }
+	.profile-img {display: none;} 
+
 
 }
 

@@ -8,25 +8,24 @@
 	<link rel="stylesheet" href="css/main.css">
 	<title>Portfolio</title>	
 </head>
-<body>
-	<div class="content">
-		<div class="header">
-			<div class="logo">
-				<img class="logo-img" src="https://c1.staticflickr.com/1/623/31802464013_f913465244_m.jpg" alt="Andrey Kuznetsov" title="@kuznetsovandrey76">
+<body class='flex'>
+		<aside class="aside">
+			<div class="profile">
+				<img class="profile-img" src="img/logo.jpg" alt="Andrey Kuznetsov" title="@kuznetsovandrey76">
 				<h1>Andrey Kuznetsov</h1>
-				<div class="logo-info">
+				<div class="profile-info">
 					<p><span class="initial_letter">P</span>hysical <span class="initial_letter">E</span>ducation teacher living in Rostov <i>(Yaroslavl region)</i></p>
 					<p class='social-media' >You can find me on <a href="https://vk.com/kuznetsovandrey76" class="vk">vk</a>, <a href="https://www.facebook.com/andreykuznetsov.pw" class="facebook">facebook</a> and <a href="https://twitter.com/akuznetsov76" class="twitter">twitter</a></p>
 				</div>
-				<a href="https://github.com/kuznetsovandrey76"><img src="img/github.png" alt="github" title="My GitHub" class="profile"></a>
-				<a href="mailto:and.rey.q@yandex.ru"><img src="img/mail.png" alt="mail" title="Mail Me" class="profile"></a>
+				<a href="https://github.com/kuznetsovandrey76"><img src="img/github.png" alt="github" title="My GitHub" class="profile__img-link"></a>
+				<a href="mailto:and.rey.q@yandex.ru"><img src="img/mail.png" alt="mail" title="Mail Me" class="profile__img-link"></a>
 			</div>
-		</div>
-		<div class="article">
-			<div class="me">	
-			<div class="left block">
+		</aside>
+		<article class="article">
+			<!-- <div class="me">	 -->
+			<div class="article__left ">
 				<div class="experience">
-					<h2 class='block__title'>Experience</h2>
+					<h2>Experience</h2>
 					<ul>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i> School#3 16’-18’ / PE Teacher <span class="right_now">now</span></li>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i> Raiffeisen Bank 16’ / Officer</li>
@@ -34,16 +33,21 @@
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i> E-Commerce 13’-15’ / Web Developer</li>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i> FST Russia 13’-14’ / Public Officer</li>
 					</ul>
-				</div>
-				<div class="education">
-					<h2 class='block__title'>Education</h2>
+					<h2>Education</h2>
 					<ul>
 						<li><i class="fa fa-book" aria-hidden="true"></i> Military University of the Ministry of Defense of the Rissian Federation / Moscow</li>
 						<li><i class="fa fa-book" aria-hidden="true"></i> Yaroslavl State Pedagogical University named after K.D. Ushinsky / Yaroslavl</li>
 					</ul>
 				</div>
+				<!-- <div class="education">
+					<h2>Education</h2>
+					<ul>
+						<li><i class="fa fa-book" aria-hidden="true"></i> Military University of the Ministry of Defense of the Rissian Federation / Moscow</li>
+						<li><i class="fa fa-book" aria-hidden="true"></i> Yaroslavl State Pedagogical University named after K.D. Ushinsky / Yaroslavl</li>
+					</ul>
+				</div> -->
 			</div>
-			<div class="right block">
+			<div class="article__right ">
 				<div class="skills">
 					<h2 class='block__title'>Skills</h2>
 					<ul>
@@ -56,14 +60,12 @@
 						<li class="skills__li-right"><i class="fa fa-check" aria-hidden="true"></i> Heroku</li>
 						<li><img src="img/Slack.png" alt="slack"> Slack</li>
 						<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Sublime</li>
-						<!-- <li><i class="fa fa-hand-o-right" aria-hidden="true"></i> WEBPACK</li> -->
 						<li><i class="fa fa-hand-o-right" aria-hidden="true"></i> Flask <span class="right_now">now</span></li>
 						<li><i class="fa fa-database" aria-hidden="true"></i> PostgreSQL <span class="right_now">now</span></li>
 					</ul>
 				</div>
 			</div>
-			</div>
-		</div>
-	</div>
+			<!-- </div> -->
+		</article>
 </body>
 </html>
