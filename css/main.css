@@ -82,8 +82,7 @@ li {line-height: 1.5;}
 	margin: 5px;
 }
 
-.experience, 
-.education {
+.experience_educations {
 	width: 90%;
 }
 
@@ -117,11 +116,19 @@ li {line-height: 1.5;}
 .initial_letter,  
 .right_now {color: #F00;}
 
-.skills__li-right {
-	margin-left: 10px;
-	font-size: 14px;	
+.skills-open {
+	text-decoration: underline gray;
+	text-decoration-style: dotted;
+	cursor: pointer;
 }
 
+.skills-git {
+	font-size: 16px;
+}
+
+.fa {
+	margin-right: 3px;
+}
 
 
 /*****     for SMALL screen     ******/
@@ -130,9 +137,10 @@ li {line-height: 1.5;}
 	.aside {
 		border: none;
 	}
+
 	.profile,
-	.experience, 
-	.education {
+	.experience_educations
+	{
 		width: 90%;
 		margin: 0 auto;
 	}	 
