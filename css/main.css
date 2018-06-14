@@ -8,7 +8,7 @@
 .flex {
 	display: flex;
 	width: 100%;
-	font-size: 20px;
+	font-size: 1.2em;
 }
 
 h1 {
@@ -78,8 +78,16 @@ li {line-height: 1.5;}
 .article__left, 
 .article__right {
 	display: flex;
-	width: 50%;
 	margin: 5px;
+}
+
+
+.article__left {
+	width: 65%;
+} 
+
+.article__right {
+	width: 35%;
 }
 
 .experience_educations {
@@ -124,6 +132,7 @@ li {line-height: 1.5;}
 
 .skills-git {
 	font-size: 16px;
+	margin-left: 10px;
 }
 
 .fa {
@@ -132,8 +141,7 @@ li {line-height: 1.5;}
 
 
 /*****     for SMALL screen     ******/
-@media (max-width: 850px) {
-
+@media (max-width: 767px) {
 	.aside {
 		border: none;
 	}
