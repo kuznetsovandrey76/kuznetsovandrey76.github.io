@@ -20,7 +20,9 @@ ul {
 	padding: 0;
 }
 
-li {line-height: 1.5;}
+li {
+	margin-bottom: 5px;
+}
 
 
 
@@ -57,7 +59,9 @@ li {line-height: 1.5;}
 	opacity: 1;
 }
 
-.profile-info {
+.profile-img,
+.profile-header,
+.profile-info p {
 	margin-bottom: 5px;
 }
 
@@ -88,6 +92,10 @@ li {line-height: 1.5;}
 
 .article__right {
 	width: 35%;
+}
+
+.article__header {
+	margin-bottom: 3px ;	
 }
 
 .experience_educations {
