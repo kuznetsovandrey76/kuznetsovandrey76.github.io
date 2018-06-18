@@ -9,7 +9,15 @@
 	display: flex;
 	width: 100%;
 	font-size: 1.1em;
+	transition: .2s ease-out;
 }
+
+.flex__dark-mode {
+	background: black;
+	color: white;
+	transition: .2s ease-out;
+}
+
 
 h1 {
 	text-transform: uppercase;
@@ -92,6 +100,7 @@ li {
 
 .article__right {
 	width: 35%;
+	position: relative;
 }
 
 .article__header {
@@ -147,6 +156,54 @@ li {
 	margin-right: 3px;
 }
 
+.profile-links {
+	margin-top: 3px;	
+}
+.profile-links__a {
+	color: black;
+	font-size: 30px;
+	transition: .2s ease-out;
+}
+
+.profile-links__a-dark {
+	color: white;
+	transition: .2s ease-out;
+}
+
+.checkbox__dark-mode {
+	position: absolute;
+	cursor: pointer;
+	top: -18%;
+	left: -8%;
+	z-index: 0;
+}
+
+.checkbox__dark-mode-outer {
+	background: gray;
+	display: inline-block;
+	position: relative;
+	width: 44px;
+	height: 24px;
+	vertical-align: middle;
+    border-radius: 14px;
+    z-index: 2;
+}
+
+.checkbox__dark-mode-inner {
+	background: white;
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 2px;
+	right: 2px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.checkbox__dark-mode-inner-move {
+	left: 2px;
+}
 
 /*****     for SMALL screen     ******/
 @media (max-width: 767px) {
