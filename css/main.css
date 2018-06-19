@@ -1,7 +1,7 @@
 
 /*****     MAIN     ******/
 * {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Tahoma', 'Raleway', sans-serif;
 	margin: 0;
 }
 
@@ -30,6 +30,24 @@ ul {
 
 li {
 	margin-bottom: 5px;
+}
+
+.header {
+	position: absolute;
+	top: 2%;
+	right: 5%;
+}
+
+.header-language {
+	width: 26px;
+	margin: 2px;
+	opacity: .4;
+	position: relative;
+	z-index: 5;	
+}
+
+.header-language-selected {
+	opacity: 1;
 }
 
 
@@ -236,5 +254,16 @@ li {
 
 	.profile-img {display: none;} 
 
+	.header {
+	position: absolute;
+	top: 0;
+	right: 2%;
+	}
+
 }
 
+@media (max-width: 500px) {
+	.header {
+		display: none;
+	}
+}
