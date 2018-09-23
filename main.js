@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	var data = {
 			name: ['Andrey Kuznetsov', 'Андрей Кузнецов', 'Andrej Kuznetsov'],
-			info: ['<span class="initial_letter">S</span>tudent living in Yaroslavl,
+			info: ['<span class="initial_letter">S</span>tudent living in Yaroslavl',
 	   		     '<span class="initial_letter">С</span>тудент, проживающий в Ярославле',
 			       '<span class="initial_letter">S</span>tudent mit Wohnsitz in Jaroslawl'],
 			text: ['You can find me on <a href="https://vk.com/kuznetsovandrey76" class="vk">vk</a>, <a href="https://www.facebook.com/kuznetsovandrey76" class="facebook">facebook</a> and <a href="https://twitter.com/akuznetsov76" class="twitter">twitter</a>', 
