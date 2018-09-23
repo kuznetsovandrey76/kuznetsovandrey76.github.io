@@ -3,9 +3,9 @@ $(document).ready(function(){
 
 	var data = {
 			name: ['Andrey Kuznetsov', 'Андрей Кузнецов', 'Andrej Kuznetsov'],
-			info: ['<span class="initial_letter">P</span>hysical <span class="initial_letter">E</span>ducation teacher living in Rostov <i>(Yaroslavl region)</i>',
-				   'Учитель <span class="initial_letter">Ф</span>изической <span class="initial_letter">К</span>ультуры, проживающий в Ростове <i>(Ярославская область)</i>',
-				   '<span class="initial_letter">L</span>ehrer der <span class="initial_letter">K</span>örperkultur wohnhaft in Rostow (Oblast Jaroslawl)'],
+			info: ['<span class="initial_letter">S</span>tudent living in Yaroslavl,
+	   		     '<span class="initial_letter">С</span>тудент, проживающий в Ярославле',
+			       '<span class="initial_letter">S</span>tudent mit Wohnsitz in Jaroslawl'],
 			text: ['You can find me on <a href="https://vk.com/kuznetsovandrey76" class="vk">vk</a>, <a href="https://www.facebook.com/kuznetsovandrey76" class="facebook">facebook</a> and <a href="https://twitter.com/akuznetsov76" class="twitter">twitter</a>', 
 				   'Вы можете найти меня в <a href="https://vk.com/kuznetsovandrey76" class="vk">vk</a>, <a href="https://www.facebook.com/kuznetsovandrey76" class="facebook">facebook</a> и <a href="https://twitter.com/akuznetsov76" class="twitter">twitter</a>', 
 				   'Sie finden mich in <a href="https://vk.com/kuznetsovandrey76" class="vk">vk</a>, <a href="https://www.facebook.com/kuznetsovandrey76" class="facebook">facebook</a> und <a href="https://twitter.com/akuznetsov76" class="twitter">twitter</a>'],
@@ -14,7 +14,6 @@ $(document).ready(function(){
 			education: ['Education', 'Образование', 'Bildung'],
 			skills: ['Skills', 'Навыки', 'Fertigkeiten']	   
 			};
-
 
 	(function() {
 		// Автодобавление контента
@@ -40,7 +39,6 @@ $(document).ready(function(){
 		$('.article__header-experience').text(data.experience[language.indexOf(this.alt)]);
 		$('.article__header-education').text(data.education[language.indexOf(this.alt)]);
 		$('.article__header-skills').text(data.skills[language.indexOf(this.alt)]);
-
 
 	});
 
