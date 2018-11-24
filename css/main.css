@@ -264,6 +264,17 @@ OLD VERSION
 	left: 2px;
 }
 
+.now:after {
+    position: relative;
+	top: -2px;
+	left: 5px;
+    content: "now"; 
+    /*margin-left: 5px;*/
+    font-size: 12px;
+    font-style: italic;
+    color: red; 
+}
+
 /*****     for SMALL screen     ******/
 @media (max-width: 767px) {
 	.aside {
@@ -274,9 +285,13 @@ OLD VERSION
 	.profile,
 	.experience_educations
 	{
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}	 
+
+	.profile {
+		margin-bottom: 10px;
+	}
 
 	.article ul, h2 {
 		text-align: center;
@@ -299,6 +314,29 @@ OLD VERSION
 	.header {
 	position: absolute;
 	top: 0;
+	}
+
+	.experience {
+		background: pink;
+		padding: 5px;
+		border: 1px solid darkred;	
+		margin-bottom: 10px;	
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+
+	.education {
+		background: lightblue;
+		padding: 5px 5%;
+		border: 1px solid blue;
+		margin-bottom: 10px;	
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+
+	.skills {
+		background: lightgray;
+		padding: 5px;
+		border: 1px solid black;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	}
 
 }
