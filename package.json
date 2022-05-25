@@ -1,0 +1,71 @@
+{
+    "name": "kuznetsovandrey76.ru",
+    "version": "0.1.0",
+    "description": "Andrey Kuznetsov",
+    "private": "true",
+    "scripts": {
+      "dev": "webpack serve --mode development --open --progress",
+      "build": "webpack --mode production",
+      "deploy": "yarn build && gh-pages -d build"
+    },
+    "author": "Andrey Kuznetsov",
+    "license": "MIT",
+    "homepage": ".",
+    "dependencies": {
+      "axios": "^0.26.1",
+      "bcryptjs": "^2.4.3",
+      "bootstrap": "5.1.3",
+      "react": "^17.0.2",
+      "react-bootstrap": "^2.3.1",
+      "react-dom": "^17.0.2",
+      "react-dropzone": "^12.0.5",
+      "react-horizontal-scrolling-menu": "^2.7.1",
+      "react-image-lightbox": "^5.1.4",
+      "react-markdown": "^8.0.2",
+      "react-photo-gallery": "^8.0.0",
+      "react-router-bootstrap": "^0.25.0",
+      "react-router-dom": "^5.2.0",
+      "react-switch": "^6.0.0",
+      "react-toastify": "^8.2.0",
+      "remark-gfm": "^3.0.1",
+      "swiper": "^8.1.1",
+      "ymaps": "^0.2.1"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.17.8",
+      "@babel/plugin-transform-runtime": "^7.17.0",
+      "@babel/preset-env": "^7.16.11",
+      "@babel/preset-react": "^7.16.7",
+      "babel-loader": "^8.2.4",
+      "babel-plugin-import": "^1.13.3",
+      "clean-webpack-plugin": "^4.0.0",
+      "css-loader": "^6.7.1",
+      "extract-text-webpack-plugin": "^3.0.2",
+      "file-loader": "^6.2.0",
+      "gh-pages": "^3.2.3",
+      "html-webpack-plugin": "^5.5.0",
+      "less": "^4.1.2",
+      "mini-css-extract-plugin": "^2.6.0",
+      "node-sass": "^7.0.1",
+      "prettier": "^2.6.1",
+      "react-hot-loader": "^4.13.0",
+      "style-loader": "^3.3.1",
+      "uglifyjs-webpack-plugin": "^2.2.0",
+      "webpack": "^5.70.0",
+      "webpack-cli": "^4.9.2",
+      "webpack-dev-server": "^4.7.4"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+  

@@ -1,3 +1,4 @@
-Andrey Kuznetsov
+### About
 
-portfolio freecodecamp 
+Andrey Kuznetsov - Full-Stack developer
+
